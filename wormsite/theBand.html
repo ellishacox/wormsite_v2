@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+  <head>
+    <title>theBand</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="theBand">
+      <button
+        id="Home"
+        type="button"
+        onclick="window.location.href='home.html'"
+      >
+        Home
+      </button>
+      <button
+        id="Music"
+        type="button"
+        onclick="window.location.href='music.html'"
+      >
+        Music
+      </button>
+      <button
+        id="theBand"
+        type="button"
+        onclick="window.location.href='theBand.html'"
+      >
+        The Band
+      </button>
+      <button
+        id="Merch"
+        type="button"
+        onclick="window.location.href='merch.html'"
+      >
+        Merch
+      </button>
+      <button
+        id="Shows"
+        type="button"
+        onclick="window.location.href='shows.html'"
+      >
+        Shows
+      </button>
+      <button
+        id="Contact"
+        type="button"
+        onclick="window.location.href='contact.html'"
+      >
+        Contact
+      </button>
+    </div>
+
+    <div>
+      <h1>The Band</h1>
+      <p>changing bio pics to illustrations</p>
+    </div>
+
+    <div id="ellisha">
+      <h2>Ellisha Cox</h2>
+      <h3>Drums</h3>
+      <img src="images/ellisha.PNG" alt="Ellisha" width="60" height="100" />
+      <br />
+      <div class="popupEllisha" onclick="ellishaPopUp()">
+        Ellisha's Bio
+        <span class="popuptext" id="popupEllishaBio"
+          ><h3>Ellisha Cox</h3>
+          <p>
+            <b
+              >Our mighty groove keeper Ellisha holds a precise tempo, emphases
+              the rhythm and makes a danceable beat out of any song.
+            </b>
+          </p>
+          <p>
+            “I started learning the drums only in college, about 3 years ago. It
+            was something I had always wanted to try out and after I learnt a
+            few songs in music class at secondary school, and I fell in love
+            with it. As I tend to listen to a wide variety of music, my
+            influences can range from the psychedelic rock of Tame Impala
+            through to chart-pop like Lady Gaga.”
+          </p></span
+        >
+      </div>
+    </div>
+
+    <div id="toby">
+      <h2>Toby Masters</h2>
+      <h3>Bass</h3>
+      <img src="images/toby.PNG" alt="Toby" width="60" height="100" /><br />
+      <div class="popupToby" onclick="tobyPopUp()">
+        Bio
+        <span class="popuptext" id="popupTobyBio"> .......</span>
+      </div>
+    </div>
+
+    <div>
+      <p><br /></p>
+    </div>
+
+    <div>
+      <h2>Maisie Palmer</h2>
+      <h3>Vocals</h3>
+      <img src="images/maisie.PNG" alt="Maisie" width="60" height="100" /><br />
+      <div class="popupMaisie" onclick="maisiePopUp()">
+        Maisie's Bio
+        <span class="popuptext" id="popupMaisieBio"
+          ><h3>Maisie Palmer</h3>
+          <p>
+            <b
+              >Maisie, a.k.a dj maisie mais, a.k.a El Jefe, is in charge of all
+              things vocal. After writing songs for years with a daisy-shaped
+              guitar, she joined forces with Toby in order to conquer Reading
+              town… and then the world.</b
+            >
+          </p>
+
+          <p>
+            “The song ‘You Suck’ will always hold a special place in my heart.
+            From practicing it in a little box room in our Sixth Form’s music
+            technology building, to recording the first version in an equally
+            boxy recording studio - the song reminds me of why I make music and
+            where it all began.”
+          </p></span
+        >
+      </div>
+    </div>
+
+    <div>
+      <p><br /></p>
+    </div>
+
+    <div id="nat">
+      <h2>Nat Walker</h2>
+      <h3>Keys</h3>
+      <img src="images/nat.PNG" alt="Nat" width="60" height="100" /><br />
+      <div class="popupNat" onclick="natPopUp()">
+        Bio
+        <span class="popuptext" id="popupNatBio"> .......</span>
+      </div>
+    </div>
+
+    <div id="finn">
+      <h2>
+        Finn <br />
+        Coomarasamy
+      </h2>
+      <h3>Guitar</h3>
+      <img src="images/finn.PNG" alt="Finn" width="60" height="100" /><br />
+      <div class="popupFinn" onclick="finnPopUp()">
+        Bio
+        <span class="popuptext" id="popupFinnBio"> .......</span>
+      </div>
+    </div>
+
+    <p>© 2021 Worm Immortality Team</p>
+    <script>
+      function ellishaPopUp() {
+        var popupEllisha = document.getElementById("popupEllishaBio");
+        popupEllisha.classList.toggle("show");
+      }
+    </script>
+    <script>
+      function tobyPopUp() {
+        var popupToby = document.getElementById("popupTobyBio");
+        popupToby.classList.toggle("show");
+      }
+    </script>
+    <script>
+      function maisiePopUp() {
+        var popupMaisie = document.getElementById("popupMaisieBio");
+        popupMaisie.classList.toggle("show");
+      }
+    </script>
+    <script>
+      function natPopUp() {
+        var popupNat = document.getElementById("popupNatBio");
+        popupNat.classList.toggle("show");
+      }
+    </script>
+    <script>
+      function finnPopUp() {
+        var popupFinn = document.getElementById("popupFinnBio");
+        popupFinn.classList.toggle("show");
+      }
+    </script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
